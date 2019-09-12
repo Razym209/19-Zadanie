@@ -1,4 +1,4 @@
-require_relative 'autoloader'
+require_relative 'config/environment'
 
-use Routes
-run App.new
+use Middleware::AppLogger
+run Simpler.application
